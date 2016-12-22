@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pro.charlychiu.myapplication6.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText android:id="@+id/stuName"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="選課結果" />
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/required"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="必修：" />
+
+    <TextView android:id="@+id/elective"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="選修："/>
+    <ListView android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <Button android:id="@+id/clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除資料"/>
+
+    <Button android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="結束並儲存"/>
+</LinearLayout>
